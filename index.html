@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- style -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="home.css">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200&display=swap" rel="stylesheet">
+  <title>Home</title>
+</head>
+
+<body>
+
+
+  <!-- navbar -->
+
+  <!-- menu -->
+  <nav class="menu">
+    <article>
+      <a href="./index.html" class="hvr-push"><img src="./assets/icons/home.svg" alt="Casa" class="flipSide-360" /></a>
+      <a href="./profile.html" class="hvr-push"><img src="./assets/icons/perfil.svg" alt="perfil"
+          class="flipSide-360" /></a>
+      <a href="./Projects.html" class="hvr-push"><img src="./assets/icons/notebook.svg" alt="Proyectos"
+          class="flipSide-360"></a>
+    </article>
+    <!-- contact -->
+    <article>
+      <a href="https://github.com/matiastorrres" target="_blank" class="hvr-push">
+        <img src="./assets/icons/github.svg" alt="github">
+      </a>
+      <a href="https://www.linkedin.com/in/matias-torres-developer/" target="_blank" class="hvr-push">
+        <img src="./assets/icons/linkedin.svg" alt="Linkedin">
+      </a>
+      <a href="https://wa.me/+5493884391698" target="_blank" class="hvr-push">
+        <img src="./assets/icons/whatsapp.svg" alt="whatsapp">
+      </a>
+    </article>
+  </nav>
+
+  <!-- home -->
+  <article class="container-home">
+    <div class="introduction">
+      <h1> Matías Torres </h1>
+      <h2 class="gradient-text">Frontend Developer</h2>
+      <div class="container-img">
+        <img src="/assets/img/cv1 (1).jpg" alt="foto de perfil">
+      </div>
+      <div class="box-typewriter1">
+        <p id="typewriter-1"></p>
+      </div>
+      <div class="btn-contact-contend">
+        <button class="btn-contact">
+          <a href="mailto:mrt.estudio.05@gmail.com">
+            ¡Trabajemos juntos!</button>
+        </a>
+      </div>
+    </div>
+    <div class="animation">
+      <div class="skills-charts">
+        <div id="myCanvasContainer">
+          <canvas width="500" height="500" id="myCanvas">
+            <ul id="tags">
+              <li><a href="#" target="_blank">HTML</a></li>
+              <li><a href="#" target="_blank">CSS</a></li>
+              <li><a href="#" target="_blank">ES5</a></li>
+              <li><a href="#" target="_blank">TypeScript</a></li>
+              <li><a href="#" target="_blank">REST</a></li>
+              <li><a href="#" target="_blank">JSON</a></li>
+              <li><a href="#" target="_blank">GSAP</a></li>
+              <li><a href="#" target="_blank">Data Science</a></li>
+              <li><a href="#" target="_blank">Wordpress</a></li>
+              <li><a href="#" target="_blank">PHP</a></li>
+              <li><a href="#" target="_blank">Python</a></li>
+              <li><a href="#" target="_blank">Node JS</a></li>
+              <li><a href="#" target="_blank">Git</a></li>
+              <li><a href="#" target="_blank">_lodash</a></li>
+              <li><a href="#" target="_blank">SASS</a></li>
+              <li><a href="#" target="_blank">JQuery</a></li>
+              <li><a href="#" target="_blank">SQI</a></li>
+              <li><a href="#" target="_blank">Gulp</a></li>
+              <li><a href="#" target="_blank">npm</a></li>
+              <li><a href="#" target="_blank">BEM</a></li>
+            </ul>
+          </canvas>
+        </div>
+      </div>
+    </div>
+  </article>
+
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+
+  <!-- jquery-canvas -->
+  <script src="./jquery.tagcanvas.js"></script>
+
+
+
+  <!-- js index -->
+  <script src="index.js"></script>
+
+  <!-- jquery-animations -->
+  <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+  <script>
+    var text = document.querySelector(".gradient-text");
+    var position = 0;
+
+    setInterval(function () {
+      position += 1;
+      text.style.backgroundPosition = position + "px";
+    }, 10);
+  </script>
+
+
+
+</body>
+
+</html>

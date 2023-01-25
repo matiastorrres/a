@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- styles -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="profile.css">
+
+  <title>profile</title>
+</head>
+
+<body>
+  <!-- menu -->
+  <nav class="menu">
+    <article>
+      <a href="./index.html" class="hvr-push"><img src="./assets/icons/home.svg" alt="Casa" class="flipSide-360" /></a>
+      <a href="./profile.html" class="hvr-push"><img src="./assets/icons/perfil.svg" alt="perfil"
+          class="flipSide-360" /></a>
+      <a href="./Projects.html" class="hvr-push"><img src="./assets/icons/notebook.svg" alt="Proyectos"
+          class="flipSide-360"></a>
+    </article>
+
+    <article>
+      <a href="https://github.com/matiastorrres" target="_blank" class="hvr-push">
+        <img src="./assets/icons/github.svg" alt="github">
+      </a>
+      <a href="https://www.linkedin.com/in/matias-torres-developer/" target="_blank" class="hvr-push">
+        <img src="./assets/icons/linkedin.svg" alt="Linkedin">
+      </a>
+      <a href="https://wa.me/+5493884391698" target="_blank" class="hvr-push">
+        <img src="./assets/icons/whatsapp.svg" alt="whatsapp">
+      </a>
+    </article>
+  </nav>
+  <!-- about -->
+  <div>
+    <div class="container-perfil">
+      <div class="container-text-perfil">
+        <article class="text-perfil">
+          <h3 class="gradient-text">Sobre mi</h3>
+          <p>Estoy emocionado por tener la oportunidad de aplicar mis habilidades y conocimientos
+            en un entorno laboral real. Estoy dispuesto a aprender y trabajar duro para contribuir
+            al éxito de un equipo.</p>
+        </article>
+      </div>
+      <div class="container-section-skill">
+        <article class="skills-container">
+          <h4 class="gradient-text gradient-text-bord ">Tecnologias que uso con mas frecuencia</h4>
+          <div class="skills">
+            <div class="skill hvr-float-shadow">
+              <img src="/assets/icons/html.svg" alt="html">
+              <span>HTML</span>
+            </div>
+            <div class="skill hvr-float-shadow">
+              <img src="/assets/icons/css.svg" alt="css"> <span>CSS</span>
+            </div>
+            <div class="skill hvr-float-shadow">
+              <img src="/assets/icons/javascript.svg" alt="javascript">
+              <span>JavaScript</span>
+            </div>
+            <div class="skill hvr-float-shadow">
+              <img src="/assets/icons/react.svg" alt="react">
+              <span>React</span>
+            </div>
+            <div class="skill hvr-float-shadow">
+              <img src="/assets/icons/material-ui.svg" alt="material-ui">
+              <span>Material-ui</span>
+            </div>
+            <div class="skill hvr-float-shadow">
+              <img src="/assets/icons/typescript.svg" alt="typescript">
+              <span>Typescript</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="skills-container">
+          <h4 class="gradient-text gradient-text-bord ">Tecnoligias que uso en backend</h4>
+          <div class="skills">
+            <div class="skill hvr-float-shadow">
+              <img src="/assets/icons/node.svg" alt="node"> <span>Node</span>
+            </div>
+            <div class="skill hvr-float-shadow">
+              <img src="/assets/icons/sql.svg" alt="sql">
+              <span>SQL</span>
+            </div>
+            <div class="skill hvr-float-shadow">
+              <img src="/assets/icons/postgresql.svg" alt="postgresql">
+              <span>Postgresql</span>
+            </div>
+            <div class="skill hvr-float-shadow">
+              <img src="/assets/icons/express.js.svg" alt="express">
+              <span>Express</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="skills-container">
+          <h4 class="gradient-text gradient-text-bord ">Otras herramientas </h4>
+          <div class="skills">
+            <div class="skill hvr-float-shadow">
+              <img src="/assets/icons/github3.svg" alt="github" id="git-hub"> <span>Github</span>
+            </div>
+            <div class="skill hvr-float-shadow">
+              <img src="/assets/icons/git.svg" alt="git">
+              <span>Git</span>
+            </div>
+            <div class="skill hvr-float-shadow">
+              <img src="/assets/icons/trello.svg" alt="trello">
+              <span>Trello</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+  <script>
+    var text = document.querySelectorAll(".gradient-text");
+    var position = 0;
+
+    setInterval(function () {
+      position += 1;
+      for (var i = 0; i < text.length; i++) {
+        text[i].style.backgroundPosition = position + "px";
+      }
+    }, 10);
+  </script>
+</body>
+
+</html>

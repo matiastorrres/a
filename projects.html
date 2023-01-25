@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="projects.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="menu">
+    <article>
+      <a href="./index.html" class="hvr-push"><img src="./assets/icons/home.svg" alt="Casa" class="flipSide-360" /></a>
+      <a href="./profile.html" class="hvr-push"><img src="./assets/icons/perfil.svg" alt="perfil"
+          class="flipSide-360" /></a>
+      <a href="./Projects.html" class="hvr-push"><img src="./assets/icons/notebook.svg" alt="Proyectos"
+          class="flipSide-360"></a>
+    </article>
+
+    <article>
+      <a href="https://github.com/matiastorrres" target="_blank" class="hvr-push">
+        <img src="./assets/icons/github.svg" alt="github">
+      </a>
+      <a href="https://www.linkedin.com/in/matias-torres-developer/" target="_blank" class="hvr-push">
+        <img src="./assets/icons/linkedin.svg" alt="Linkedin">
+      </a>
+      <a href="https://wa.me/+5493884391698" target="_blank" class="hvr-push">
+        <img src="./assets/icons/whatsapp.svg" alt="whatsapp">
+      </a>
+    </article>
+  </nav>
+  <article class="project-container">
+    <h2 class="gradient-text">Proyectos</h2>
+
+    <div class="container-cards">
+      <!-- one -->
+      <div class="container-card" data-aos="fade-right">
+        <div class="card-img hvr-bounce-in"><img src="../../assets/img/cakes-and-bases.png" alt="project-img"></div>
+        <div class="container-card-desk">
+          <h5>proyecto Destacado</h5>
+          <h3>cakes and bases Proyecto Grupal</h3>
+          <p class=" card-description">Una aplicación web para comprar bases de tortas artesanales,
+            carrito compras, favoritos, dashboad usuario, notificaciones de registro,
+            notificacion de compra, login, reviews, dashboard para usuario y administrador.
+          </p>
+          <p>React-Node-Tailwind CSS-Express-sequelize-Postgresql-Firebase-Mercado Pago-Nodemailer-Cloudinary</p>
+          <div class="links">
+            <a href="https://github.com/matiastorrres" target="_blank"><img src="../../assets/icons/github.svg"
+                alt="github"></a>
+            <a href="https://github.com/matiastorrres" target="_blank"><img src="../../assets/icons/link.svg"
+                alt="link"></a>
+          </div>
+        </div>
+      </div>
+      <!-- two -->
+      <div class="container-card" data-aos="fade-left">
+        <div class="card-img hvr-bounce-in"><img src="../../assets/img/cakes-and-bases.png" alt="project-img"></div>
+        <div class="container-card-desk">
+          <h5>proyecto Destacado</h5>
+          <h3>cakes and bases Proyecto Grupal</h3>
+          <p class=" card-description">Una aplicación web para comprar bases de tortas artesanales,
+            carrito compras, favoritos, dashboad usuario, notificaciones de registro,
+            notificacion de compra, login, reviews, dashboard para usuario y administrador.
+          </p>
+          <p>React-Node-Tailwind CSS-Express-sequelize-Postgresql-Firebase-Mercado Pago-Nodemailer-Cloudinary</p>
+          <div class="links">
+            <a href="https://github.com/matiastorrres" target="_blank"><img src="../../assets/icons/github.svg"
+                alt="github"></a>
+            <a href="https://github.com/matiastorrres" target="_blank"><img src="../../assets/icons/link.svg"
+                alt="link"></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-card" data-aos="fade-right">
+        <div class="card-img hvr-bounce-in"><img src="../../assets/img/cakes-and-bases.png" alt="project-img"></div>
+        <div class="container-card-desk">
+          <h5>proyecto Destacado</h5>
+          <h3>cakes and bases Proyecto Grupal</h3>
+          <p class=" card-description">Una aplicación web para comprar bases de tortas artesanales,
+            carrito compras, favoritos, dashboad usuario, notificaciones de registro,
+            notificacion de compra, login, reviews, dashboard para usuario y administrador.
+          </p>
+          <p>React-Node-Tailwind CSS-Express-sequelize-Postgresql-Firebase-Mercado Pago-Nodemailer-Cloudinary</p>
+          <div class="links">
+            <a href="https://github.com/matiastorrres" target="_blank"><img src="../../assets/icons/github.svg"
+                alt="github"></a>
+            <a href="https://github.com/matiastorrres" target="_blank"><img src="../../assets/icons/link.svg"
+                alt="link"></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-card" data-aos="fade-left">
+        <div class="card-img hvr-bounce-in"><img src="../../assets/img/cakes-and-bases.png" alt="project-img"></div>
+        <div class="container-card-desk">
+          <h5>proyecto Destacado</h5>
+          <h3>cakes and bases Proyecto Grupal</h3>
+          <p class=" card-description">Una aplicación web para comprar bases de tortas artesanales,
+            carrito compras, favoritos, dashboad usuario, notificaciones de registro,
+            notificacion de compra, login, reviews, dashboard para usuario y administrador.
+          </p>
+          <p>React-Node-Tailwind CSS-Express-sequelize-Postgresql-Firebase-Mercado Pago-Nodemailer-Cloudinary</p>
+          <div class="links">
+            <a href="https://github.com/matiastorrres" target="_blank"><img src="../../assets/icons/github.svg"
+                alt="github"></a>
+            <a href="https://github.com/matiastorrres" target="_blank"><img src="../../assets/icons/link.svg"
+                alt="link"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </article>
+  <script>
+    var text = document.querySelector(".gradient-text");
+    var position = 0;
+
+    setInterval(function () {
+      position += 1;
+      text.style.backgroundPosition = position + "px";
+    }, 10);
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
