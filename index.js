@@ -23,7 +23,6 @@ $(document).ready(function () {
 
 /* typewriter */
 const $typewriter1 = document.getElementById("typewriter-1");
-console.log($typewriter1);
 
 const typewriter1 = (text = "", tiempo = 200, etiqueta = "") => {
   let arrayCaracteres = text.split("");
@@ -107,3 +106,8 @@ typewriter1(
 // }
 
 // animate();
+
+/*loader*/
+window.addEventListener("load", () => {
+  document.getElementById("loader").classList.toggle("loader2");
+});

@@ -80,6 +80,7 @@
   .animation canvas {
     width: 550px;
     padding-right: 2rem;
+    cursor: pointer;
   }
   a:link,
   a:visited,
